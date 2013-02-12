@@ -1,4 +1,4 @@
-* Just a personal package
+* Just a personal R package
 
 Convenience and utility functions for personal use. Not to be published anywhere.
 
