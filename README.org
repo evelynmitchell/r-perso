@@ -1,0 +1,18 @@
+#+TITLE: perso package
+
+Just convenience function for personal use. Not to be published anywhere.
+
+How to edit :
+
+- edit =R/functions.r=
+- =library(devtools)=
+- =load_all()=
+- test
+- =install()=
+
+To install on a new system :
+
+- =git clone https://...=
+- launch R in package directory
+- =library(devtools)=
+- =install()=

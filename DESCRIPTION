@@ -1,0 +1,14 @@
+Package: perso
+Maintainer: Julien Barnier <julien.barnier@ens-lyon.fr>
+Author: Julien Barnier
+Version: 0.0
+License: MIT
+Title: Utility functions for personal use
+Description: Just a set of functions and tools for personal use, not ot be
+    published anywhere.
+Suggests:
+    testthat,
+    roxygen2
+Collate:
+    'perso-package.r'
+    'functions.r'
