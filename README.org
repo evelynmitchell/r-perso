@@ -1,6 +1,6 @@
-#+TITLE: perso package
+* Just a personal package
 
-Just convenience function for personal use. Not to be published anywhere.
+Convenience and utility functions for personal use. Not to be published anywhere.
 
 How to edit :
 
