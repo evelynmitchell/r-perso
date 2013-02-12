@@ -1,11 +1,12 @@
 ##' Install a package just for the current session
-##'
-##' Install a package just for the current session
+##' 
 ##' @param pack package name
 ##' @param path path to install
 
 tmp.install.package <- function(pack, path="/tmp") {
-  print("totototititatatutu")
+  ## Add 'path' to .libPaths, and be sure that it is not
+  ## at the first position, otherwise any package during
+  ## this session would be installed into 'path'
   firstpath <- .libPaths()[1]
   .libPaths(c(firstpath, path))
   install.packages(pack, dependencies=TRUE, lib=path)
