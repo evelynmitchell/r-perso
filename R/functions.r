@@ -64,3 +64,15 @@ get.so <- function (id, index=NULL, cat.output=FALSE) {
 cat.so <- function (id, index=NULL) { 
   get.so.code(id=id, index=index, cat.output=TRUE)
 }
+
+
+##' Copy and paste from Stack Overflow into R session
+##'
+##' By Ananda Mahto : http://chat.stackoverflow.com/transcript/message/8028201#8028201
+
+read.so <- function(sep = "", header = TRUE) {
+  suppressWarnings(
+    read.table(text = gsub("^#", "", readLines("clipboard")),
+               header = header, stringsAsFactors = FALSE,
+               sep = sep))
+}
