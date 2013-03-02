@@ -1,2 +1,7 @@
-# Export all names
-exportPattern(".")
+export(cat.so)
+export(dev2png)
+export(get.so)
+export(read.tc)
+export(readcsv.tc)
+export(tmp.install.packages)
+import(XML)

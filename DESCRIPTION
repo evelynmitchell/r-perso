@@ -6,7 +6,10 @@ License: MIT
 Title: Utility functions for personal use
 Description: Just a set of functions and tools for personal use, not ot be
     published anywhere.
+Imports:
+    XML
 Suggests:
+    XML,
     testthat,
     roxygen2
 Collate:
