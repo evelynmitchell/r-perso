@@ -19,7 +19,7 @@ tmp.install.packages <- function(pack, dependencies=TRUE, ...) {
 ##' @param path path to the png file
 ##' @export
 dev2png <- function(path="/tmp/temp.png") {
-  dev <- dev.copy(png, file=path, width=480, height=480)
+  dev <- dev.copy(png, file=path, width=640, height=640)
   dev.off(dev)
 }
 
