@@ -19,7 +19,7 @@ tmp.install.packages <- function(pack, dependencies=TRUE, ...) {
 ##' @param path path to the png file
 ##' @export
 dev2png <- function(path="/tmp/temp.png") {
-  dev <- dev.copy(png, file=path, width=480, height=480)
+  dev <- dev.copy(png, file=path, width=640, height=640)
   dev.off(dev)
 }
 
@@ -66,4 +66,16 @@ get.so <- function (id, index=NULL, cat.output=FALSE) {
 ##' @export
 cat.so <- function (id, index=NULL) { 
   get.so(id=id, index=index, cat.output=TRUE)
+}
+
+
+##' Copy and paste from Stack Overflow into R session
+##'
+##' By Ananda Mahto : http://chat.stackoverflow.com/transcript/message/8028201#8028201
+
+read.so <- function(sep = "", header = TRUE) {
+  suppressWarnings(
+    read.table(text = gsub("^#", "", readLines("clipboard")),
+               header = header, stringsAsFactors = FALSE,
+               sep = sep))
 }
