@@ -5,10 +5,10 @@
 ##' @param ... further arguments passed to install.packages()
 ##' @export
 tmp.install.packages <- function(pack, dependencies=TRUE, ...) {
+  path <- tempdir()
   ## Add 'path' to .libPaths, and be sure that it is not
   ## at the first position, otherwise any package during
   ## this session would be installed into 'path'
-  path <- tempdir()
   firstpath <- .libPaths()[1]
   .libPaths(c(firstpath, path))
   install.packages(pack, dependencies=dependencies, lib=path, ...)
